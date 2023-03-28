@@ -36,4 +36,31 @@
   background-color: rgb(17, 88, 160);
   border-radius: 10px;
 }
-/*skapa undermeny som inte används på index sidan*/
+.subbar {
+  position: fixed;
+  margin-top: 80px;
+  background: rgb(17, 88, 160);
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 15;
+}
+.subbar-links {
+  margin-left: auto;
+  margin-right: 180px;
+  display: flex;
+  flex-direction: row;
+  font-size: 125%;
+}
+.subbar-links > a {
+  padding: 14px;
+  min-width: fit-content;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+}
+.subbar-links > a:hover {
+  background-color: rgb(35, 58, 70);
+}
