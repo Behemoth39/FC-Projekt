@@ -2,14 +2,20 @@
   position: fixed;
   background: rgb(35, 58, 70);
   display: flex;
+  flex-direction: row;
   height: 80px;
   width: 100%;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 20;
 }
 .navbar-site-name {
-  color: white;
-  margin-left: 150px;
   display: flex;
+}
+.navbar-site-name > a {
+  color: white;
+  text-decoration: none;
+  margin: auto;
+  margin-left: 150px;
   font-size: 140%;
 }
 .navbar-links {
@@ -20,9 +26,14 @@
   font-size: 125%;
 }
 .navbar-links > a {
-  padding-left: 25px;
+  padding: 12px;
   min-width: fit-content;
   margin: auto;
   color: white;
   text-decoration: none;
 }
+.navbar-links > a:hover {
+  background-color: rgb(17, 88, 160);
+  border-radius: 10px;
+}
+/*skapa undermeny som inte används på index sidan*/

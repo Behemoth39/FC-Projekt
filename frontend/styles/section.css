@@ -1,38 +1,39 @@
 .home-banner {
-  height: 800px;
-  background-image: url("../img/gym.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.home-banner > p {
-  margin-top: 200px;
-  width: 900px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  color: antiquewhite;
+  height: 500px;
+  margin-top: 80px;
   font-size: 50px;
 }
+.home-banner > p {
+  margin: auto;
+  margin-top: 60px;
+  width: 1200px;
+}
 .workout {
+  display: flex;
+  flex-direction: row;
   background-color: rgb(22, 55, 87);
-  height: 600px;
+  height: 700px;
   color: antiquewhite;
   font-size: 25px;
 }
-.workout > p {
-  width: 1000px;
-  margin: auto;
+.work-row-1 {
+  width: 50%;
+  background-image: url("../img/gym.jpg"); /*Change image*/
+  background-size: cover;
+}
+.work-row-2 {
+  padding: 20px;
+  width: 50%;
 }
 .food {
   display: flex;
   flex-direction: row;
-  margin: auto;
   height: 700px;
   font-size: 25px;
 }
 .food-row-1 {
   padding: 20px;
   width: 50%;
-  margin-right: 80px;
 }
 .food-row-2 {
   width: 50%;
