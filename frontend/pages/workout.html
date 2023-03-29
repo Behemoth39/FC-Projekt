@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Companion</title>
     <link rel="stylesheet" href="../styles/base.css" />
-    <link rel="stylesheet" href="../styles/section.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/workout.css" />
     <link rel="stylesheet" href="../styles/utility.css" />
   </head>
   <body>
-    <main>
+    <header>
       <nav class="navbar">
         <div class="navbar-site-name">
           <a href="../index.html">Fitness Companion</a>
@@ -25,31 +25,46 @@
       </nav>
       <nav class="subbar">
         <div class="subbar-links">
-          <a href="../index.html">Home</a>
-          <a href="./food.html">Food</a>
-          <a href="./workout.html">Workout</a>
-          <a href="">About</a>
-          <a href="">Login</a>
+          <a href="">Diary</a>
+          <a href="">Exercises</a>
+          <a href="">Free Programs</a>
+          <a href="">Premium Programs</a>
         </div>
       </nav>
-      <section class="workout top-section">
-        <div class="work-row-1"></div>
-        <div class="work-row-2">
-          <h2>Workout</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel nisi ac justo
-            lobortis rutrum nec sed neque. Mauris vel libero sed diam viverra vestibulum vitae at
-            nisl. Duis tortor sem, blandit sit amet posuere et, fringilla eu leo. Sed nibh lorem,
-            euismod sed rutrum id, tincidunt quis purus. Curabitur imperdiet, tellus non semper
-            aliquam, erat est rhoncus libero, nec efficitur enim ligula et tellus. Fusce non
-            ullamcorper magna. In mattis massa eget purus iaculis pulvinar. Fusce in tempus lectus.
-            Donec lacus risus, luctus sed elit ac, condimentum blandit orci. Mauris eleifend eget
-            orci in iaculis. Sed congue a lectus non venenatis. Duis augue tortor, lobortis non
-            sapien et, varius commodo felis. Nullam at mollis lorem. Mauris vehicula tortor id
-            tellus efficitur rutrum nec ac velit. Cras blandit, lorem non placerat pellentesque,
-            lorem quam pulvinar nulla, non vehicula metus quam sed turpis.
-            <a class="logbook" href="">logged workouts</a>
-          </p>
+    </header>
+    <main>
+      <section class="table-holder">
+        <a href="" class="cal">Logs</a>
+        <div class="table-container">
+          <table>
+            <colgroup>
+              <col class="col-1" />
+              <col class="col-2" />
+            </colgroup>
+            <thead>
+              <tr>
+                <td colspan="2">Exercises</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="card">
+                  <h4>Squats</h4>
+                  <p>15 reps</p>
+                  <p>100kg</p>
+                </td>
+                <td class="delete">X</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="buttons">
+            <button>Add exercise</button>
+          </div>
         </div>
       </section>
     </main>

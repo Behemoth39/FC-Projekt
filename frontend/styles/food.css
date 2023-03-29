@@ -1,0 +1,67 @@
+.cal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  font-size: 20;
+  text-decoration: none;
+}
+.table-holder {
+  width: 1200px;
+  margin: auto;
+  margin-top: 150px;
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+table {
+  width: 800px;
+}
+.col-1 {
+  background-color: whitesmoke;
+  width: 200px;
+}
+.col-2 {
+  background-color: whitesmoke;
+  width: 120px;
+}
+.col-3 {
+  width: 20px;
+}
+thead {
+  background-color: rgb(17, 88, 160);
+  color: white;
+}
+td {
+  padding: 4px 10px;
+}
+tbody {
+  padding: 5px 5px;
+  font-size: 15;
+}
+tfoot {
+  height: 45px;
+  color: blue;
+  font-size: 15;
+  background-color: white;
+}
+.delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+.text-window {
+  background-color: whitesmoke;
+  border: solid 1px grey;
+  width: 350px;
+  margin-left: 50px;
+}

@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/section.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/food.css" />
     <link rel="stylesheet" href="../styles/utility.css" />
   </head>
   <body>
-    <main>
+    <header>
       <nav class="navbar">
         <div class="navbar-site-name">
           <a href="../index.html">Fitness Companion</a>
@@ -25,28 +26,56 @@
       </nav>
       <nav class="subbar">
         <div class="subbar-links">
-          <a href="../index.html">Home</a>
-          <a href="./food.html">Food</a>
-          <a href="./workout.html">Workout</a>
-          <a href="">About</a>
-          <a href="">Login</a>
+          <a href="">Diary</a>
+          <a href="">Meals</a>
+          <a href="">Free Plans</a>
+          <a href="">Premium Plans</a>
         </div>
       </nav>
-      <section class="food top-section">
-        <div class="food-row-1">
-          <h2>Food</h2>
-          <p>
-            Nam vel purus vitae lorem elementum convallis. Morbi a aliquet turpis, pretium commodo
-            odio. Aliquam cursus porta pharetra. Integer cursus ultrices risus sed hendrerit. Aenean
-            sed pretium nisi. Praesent luctus lacus elit, ac pulvinar augue gravida sed. Morbi nibh
-            lorem, facilisis in dignissim in, ullamcorper ac est. Aenean viverra vel eros ut
-            porttitor. Quisque facilisis, libero id pretium dictum, sapien odio commodo lorem, in
-            ullamcorper nisl sapien eget sem. Integer sit amet auctor tortor. Etiam aliquet dolor
-            interdum vestibulum bibendum. Suspendisse ut pharetra nibh. Sed maximus nunc at felis
-            convallis, sit amet facilisis purus
-          </p>
+    </header>
+    <main>
+      <section class="table-holder">
+        <a href="" class="cal">Logs</a>
+        <div class="table-container">
+          <table>
+            <colgroup>
+              <col class="col-1" />
+              <col class="col-2" />
+              <col class="col-2" />
+              <col class="col-2" />
+              <col class="col-2" />
+              <col class="col-2" />
+              <col class="col-3" />
+            </colgroup>
+            <thead>
+              <tr>
+                <td>Food</td>
+                <td>Amount / g</td>
+                <td>Calories / kcal</td>
+                <td>Protein / g</td>
+                <td>Carbs / g</td>
+                <td>Fat / g</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chili Con Carne</td>
+                <td>200</td>
+                <td>206</td>
+                <td>15</td>
+                <td>22,4</td>
+                <td>7,8</td>
+                <td class="delete">X</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Add Meal</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="text-window"><p>Food notes</p></div>
         </div>
-        <div class="food-row-2"></div>
       </section>
     </main>
     <footer></footer>
