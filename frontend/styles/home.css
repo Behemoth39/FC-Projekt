@@ -8,10 +8,12 @@
   margin-top: 60px;
   width: 1200px;
 }
+.workout-container {
+  background-color: rgb(22, 55, 87);
+}
 .workout {
   display: flex;
   flex-direction: row;
-  background-color: rgb(22, 55, 87);
   height: 700px;
   color: antiquewhite;
   font-size: 25px;
