@@ -22,19 +22,32 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
-table {
-  width: 800px;
+.main-table {
+  width: 750px;
+  height: fit-content;
+}
+.sub-table {
+  width: 350px;
+  height: fit-content;
+  margin-left: 50px;
 }
 .col-1 {
   background-color: whitesmoke;
-  width: 200px;
+  width: 170px;
 }
 .col-2 {
   background-color: whitesmoke;
-  width: 120px;
+  width: 100px;
 }
 .col-3 {
   width: 20px;
+}
+.col-4 {
+  width: 60px;
+  background-color: whitesmoke;
+}
+.header {
+  text-align: center;
 }
 thead {
   background-color: rgb(17, 88, 160);
@@ -63,5 +76,7 @@ tfoot {
   background-color: whitesmoke;
   border: solid 1px grey;
   width: 350px;
+  height: 400px;
+  margin-top: 50px;
   margin-left: 50px;
 }

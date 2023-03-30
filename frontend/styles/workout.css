@@ -11,6 +11,7 @@
 }
 table {
   width: 600px;
+  height: fit-content;
   background-color: whitesmoke;
   border-collapse: collapse;
 }
