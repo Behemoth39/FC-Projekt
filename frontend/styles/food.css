@@ -11,6 +11,9 @@
   font-size: 20;
   text-decoration: none;
 }
+.cal:hover {
+  background-color: darkgreen;
+}
 .table-holder {
   width: 1200px;
   margin: auto;
@@ -73,6 +76,7 @@ tfoot {
   color: red;
 }
 .text-window {
+  text-align: center;
   background-color: whitesmoke;
   border: solid 1px grey;
   width: 350px;

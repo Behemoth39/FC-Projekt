@@ -24,8 +24,6 @@
 }
 .work-row-1 {
   width: 50%;
-  background-image: url("../img/gym.jpg"); /*Change image*/
-  background-size: cover;
 }
 .work-row-2 {
   padding: 20px;
@@ -47,8 +45,6 @@
 }
 .food-row-2 {
   width: 50%;
-  background-image: url("../img/food.jpg"); /*Change image*/
-  background-size: cover;
 }
 .logbook {
   color: black;
@@ -69,4 +65,7 @@
 .info-row-2 {
   width: 600px;
   padding: 15px;
+}
+img {
+  margin-top: 100px;
 }
