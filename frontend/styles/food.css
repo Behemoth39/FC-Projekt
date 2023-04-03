@@ -1,52 +1,47 @@
+.table-holder {
+  width: 100%;
+  margin: auto;
+  margin-top: 15rem;
+}
+.table-container {
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .cal {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 160px;
-  height: 15px;
-  border-radius: 20px;
+  width: 9rem;
+  height: 1rem;
+  border-radius: 1.2rem;
   background-color: green;
   color: white;
-  font-size: 20;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 .cal:hover {
   background-color: darkgreen;
 }
-.table-holder {
-  width: 1200px;
-  margin: auto;
-  margin-top: 150px;
-}
-.table-container {
-  display: flex;
-  justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
 .main-table {
-  width: 750px;
+  min-width: fit-content;
   height: fit-content;
+  margin: auto;
 }
 .sub-table {
-  width: 350px;
+  width: fit-content;
   height: fit-content;
-  margin-left: 50px;
+  margin: auto;
+  margin-top: 2.5rem;
 }
 .col-1 {
   background-color: whitesmoke;
-  width: 170px;
 }
 .col-2 {
   background-color: whitesmoke;
-  width: 100px;
-}
-.col-3 {
-  width: 20px;
 }
 .col-4 {
-  width: 60px;
   background-color: whitesmoke;
 }
 .header {
@@ -69,18 +64,193 @@ tfoot {
   font-size: 15;
   background-color: white;
 }
+.text-window {
+  text-align: center;
+  background-color: whitesmoke;
+  border: solid 1px grey;
+  margin: auto;
+  margin-top: 2rem;
+  min-height: 8rem;
+}
 .delete {
   display: flex;
   align-items: center;
   justify-content: center;
   color: red;
 }
-.text-window {
-  text-align: center;
-  background-color: whitesmoke;
-  border: solid 1px grey;
-  width: 350px;
-  height: 400px;
-  margin-top: 50px;
-  margin-left: 50px;
+@media screen and (min-width: 950px) {
+  .cal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 160px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-size: 20;
+    text-decoration: none;
+  }
+  .cal:hover {
+    background-color: darkgreen;
+  }
+  .table-holder {
+    width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-table {
+    width: 750px;
+    height: fit-content;
+  }
+  .sub-table {
+    width: 350px;
+    height: fit-content;
+    margin-left: 50px;
+  }
+  .col-1 {
+    background-color: whitesmoke;
+    width: 170px;
+  }
+  .col-2 {
+    background-color: whitesmoke;
+    width: 100px;
+  }
+  .col-3 {
+    width: 20px;
+  }
+  .col-4 {
+    width: 60px;
+    background-color: whitesmoke;
+  }
+  .header {
+    text-align: center;
+  }
+  thead {
+    background-color: rgb(17, 88, 160);
+    color: white;
+  }
+  td {
+    padding: 4px 10px;
+  }
+  tbody {
+    padding: 5px 5px;
+    font-size: 15;
+  }
+  tfoot {
+    height: 45px;
+    color: blue;
+    font-size: 15;
+    background-color: white;
+  }
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
+  .text-window {
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 160px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-size: 20;
+    text-decoration: none;
+  }
+  .cal:hover {
+    background-color: darkgreen;
+  }
+  .table-holder {
+    width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-table {
+    width: 750px;
+    height: fit-content;
+  }
+  .sub-table {
+    width: 350px;
+    height: fit-content;
+    margin-left: 50px;
+  }
+  .col-1 {
+    background-color: whitesmoke;
+    width: 170px;
+  }
+  .col-2 {
+    background-color: whitesmoke;
+    width: 100px;
+  }
+  .col-3 {
+    width: 20px;
+  }
+  .col-4 {
+    width: 60px;
+    background-color: whitesmoke;
+  }
+  .header {
+    text-align: center;
+  }
+  thead {
+    background-color: rgb(17, 88, 160);
+    color: white;
+  }
+  td {
+    padding: 4px 10px;
+  }
+  tbody {
+    padding: 5px 5px;
+    font-size: 15;
+  }
+  tfoot {
+    height: 45px;
+    color: blue;
+    font-size: 15;
+    background-color: white;
+  }
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
+  .text-window {
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
 }
