@@ -1,12 +1,10 @@
 .home-banner {
-  height: 600px;
-  margin-top: 80px;
-  font-size: 50px;
+  height: fit-content;
+  margin-top: 10.5rem;
 }
 .home-banner > p {
   margin: auto;
-  margin-top: 60px;
-  width: 1200px;
+  padding: 2rem;
 }
 .workout-container {
   background-color: rgb(22, 55, 87);
@@ -14,37 +12,22 @@
 .workout {
   display: flex;
   flex-direction: row;
-  height: 700px;
+  height: fit-content;
   color: antiquewhite;
-  font-size: 25px;
-  width: 1200px;
   margin: auto;
-  padding: 30px;
-  padding-bottom: 60px;
-}
-.work-row-1 {
-  width: 50%;
+  padding-bottom: 2rem;
 }
 .work-row-2 {
-  padding: 20px;
-  width: 50%;
+  padding: 2rem;
 }
 .food {
   display: flex;
   flex-direction: row;
-  height: 700px;
-  font-size: 25px;
-  width: 1200px;
+  height: fit-content;
   margin: auto;
-  padding: 30px;
-  padding-top: 60px;
 }
 .food-row-1 {
-  padding: 20px;
-  width: 50%;
-}
-.food-row-2 {
-  width: 50%;
+  padding: 2rem;
 }
 .logbook {
   color: black;
@@ -52,20 +35,160 @@
 .info {
   background-color: rgb(22, 55, 87);
   color: antiquewhite;
-  height: 300px;
-  font-size: 20px;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .info-row-1 {
-  width: 600px;
-  padding: 15px;
+  width: 50%;
+  padding: 1rem;
 }
 .info-row-2 {
-  width: 600px;
-  padding: 15px;
+  width: 50%;
+  padding: 1rem;
 }
 img {
-  margin-top: 100px;
+  display: none;
+}
+
+@media screen and (min-width: 950px) {
+  .home-banner {
+    height: fit-content;
+    margin-top: 5rem;
+    font-size: 1.8rem;
+  }
+  .home-banner > p {
+    margin: auto;
+    padding: 3rem;
+  }
+  .workout-container {
+    background-color: rgb(22, 55, 87);
+  }
+  .workout {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    color: antiquewhite;
+    font-size: 1.8rem;
+    margin: auto;
+  }
+  .work-row-2 {
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .food {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+  }
+  .food-row-1 {
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .logbook {
+    color: black;
+  }
+  .info {
+    background-color: rgb(22, 55, 87);
+    color: antiquewhite;
+    height: fit-content;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .info-row-1 {
+    width: 50%;
+    padding: 1rem;
+  }
+  .info-row-2 {
+    width: 50%;
+    padding: 1rem;
+  }
+  img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .home-banner {
+    height: 600px;
+    margin-top: 80px;
+    font-size: 50px;
+  }
+  .home-banner > p {
+    margin: auto;
+    margin-top: 60px;
+    width: 1200px;
+  }
+  .workout-container {
+    background-color: rgb(22, 55, 87);
+  }
+  .workout {
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    color: antiquewhite;
+    font-size: 25px;
+    width: 1200px;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+  .work-row-1 {
+    width: 50%;
+  }
+  .work-row-2 {
+    padding: 20px;
+    width: 50%;
+  }
+  .food {
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    font-size: 25px;
+    width: 1200px;
+    margin: auto;
+    padding: 30px;
+    padding-top: 60px;
+  }
+  .food-row-1 {
+    padding: 20px;
+    width: 50%;
+  }
+  .food-row-2 {
+    width: 50%;
+  }
+  .logbook {
+    color: black;
+  }
+  .info {
+    background-color: rgb(22, 55, 87);
+    color: antiquewhite;
+    height: 300px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .info-row-1 {
+    width: 600px;
+    padding: 15px;
+  }
+  .info-row-2 {
+    width: 600px;
+    padding: 15px;
+  }
+  img {
+    display: block;
+    margin-top: 100px;
+  }
 }

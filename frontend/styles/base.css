@@ -14,5 +14,12 @@ article {
 }
 footer {
   background-color: rgb(35, 58, 70);
-  height: 100px;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+footer > p {
+  margin: 0%;
+  padding: 1rem;
+  color: white;
 }

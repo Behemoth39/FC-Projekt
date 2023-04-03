@@ -3,10 +3,9 @@
   background: rgb(35, 58, 70);
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: fit-content;
   width: 100%;
   font-weight: bold;
-  font-size: 20;
 }
 .navbar-site-name {
   display: flex;
@@ -15,33 +14,32 @@
   color: white;
   text-decoration: none;
   margin: auto;
-  margin-left: 150px;
-  font-size: 140%;
+  margin-left: 1rem;
+  font-size: 1.5rem;
 }
 .navbar-links {
-  margin-left: auto;
-  margin-right: 150px;
   display: flex;
-  flex-direction: row;
-  font-size: 125%;
+  flex-direction: column;
+  list-style-type: none;
 }
-.navbar-links > a {
-  padding: 12px;
+.navbar-links > li,
+a {
+  padding: 0.5rem;
   min-width: fit-content;
   margin: auto;
   color: white;
   text-decoration: none;
 }
-.navbar-links > a:hover {
+.navbar-links > li:hover {
   background-color: rgb(17, 88, 160);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 .subbar {
   position: fixed;
-  margin-top: 80px;
+  margin-top: 10.5rem;
   background: rgb(17, 88, 160);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 50px;
   width: 100%;
   font-weight: bold;
@@ -63,4 +61,138 @@
 }
 .subbar-links > a:hover {
   background-color: rgb(35, 58, 70);
+}
+
+@media screen and (min-width: 950px) {
+  .navbar {
+    position: fixed;
+    background: rgb(35, 58, 70);
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .navbar-site-name {
+    display: flex;
+  }
+  .navbar-site-name > a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .navbar-links {
+    margin-left: auto;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+  }
+  .navbar-links {
+    padding: 0.5rem;
+    min-width: fit-content;
+    color: white;
+    text-decoration: none;
+  }
+  .navbar-links > li:hover {
+    background-color: rgb(17, 88, 160);
+    border-radius: 1rem;
+  }
+  .subbar {
+    position: fixed;
+    margin-top: 5rem;
+    background: rgb(17, 88, 160);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+  .subbar-links {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  .subbar-links {
+    min-width: fit-content;
+    color: white;
+  }
+  .subbar-links > li:hover {
+    background-color: rgb(35, 58, 70);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar {
+    position: fixed;
+    background: rgb(35, 58, 70);
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .navbar-site-name {
+    display: flex;
+  }
+  .navbar-site-name > a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 150px;
+    font-size: 140%;
+  }
+  .navbar-links {
+    margin-left: auto;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  .navbar-links > li,
+  a {
+    padding: 12px;
+    min-width: fit-content;
+    margin: auto;
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .navbar-links > li:hover {
+    background-color: rgb(17, 88, 160);
+    border-radius: 10px;
+  }
+  .subbar {
+    position: fixed;
+    margin-top: 80px;
+    background: rgb(17, 88, 160);
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15;
+  }
+  .subbar-links {
+    margin-left: auto;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: row;
+    font-size: 125%;
+  }
+  .subbar-links > a {
+    padding: 14px;
+    min-width: fit-content;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+  }
+  .subbar-links > a:hover {
+    background-color: rgb(35, 58, 70);
+  }
 }
