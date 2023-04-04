@@ -1,4 +1,5 @@
 @media screen and (max-width: 949px) {
+  /* remove redundancies */
   .table-holder {
     width: 100%;
     margin-top: 15rem;
@@ -72,6 +73,7 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
+  /* remove redundancies */
   .table-holder {
     width: 90%;
     margin-top: 9.5rem;
@@ -143,6 +145,7 @@
 }
 
 @media screen and (min-width: 1280px) {
+  /* remove redundancies */
   .table-holder {
     width: 1000px;
     margin: auto;

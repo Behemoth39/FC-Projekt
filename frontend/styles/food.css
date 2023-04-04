@@ -1,4 +1,5 @@
 @media screen and (max-width: 949px) {
+  /* Use CSS Grid */
   .table-holder {
     width: 100%;
     margin: auto;
@@ -84,6 +85,7 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
+  /* Use CSS Grid */
   .table-holder {
     width: 100%;
     margin-top: 150px;
@@ -177,6 +179,7 @@
 }
 
 @media screen and (min-width: 1280px) {
+  /* Use CSS Grid */
   .cal {
     display: flex;
     align-items: center;
