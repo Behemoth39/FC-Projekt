@@ -1,73 +1,79 @@
-.table-holder {
-  width: 100%;
-  margin-top: 15rem;
-}
-.table-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-table {
-  height: fit-content;
-  background-color: whitesmoke;
-  border-collapse: collapse;
-}
-.col-1 {
-  width: 45%;
-}
-.col-2 {
-  width: 25%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 5%;
-}
-thead {
-  background-color: rgb(17, 88, 160);
-  color: white;
-  font-size: 1.2rem;
-}
-td {
-  padding: 0.4rem 0.8rem;
-}
-tbody {
-  padding: 0.4rem 0.4rem;
-}
-tfoot {
-  height: 2rem;
-  font-size: 1.2rem;
-}
-.edit {
-  color: red;
-}
-.add-set {
-  color: red;
-}
-.buttons {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  margin-top: 2rem;
-}
-button:last-child {
-  margin-left: 4rem;
-}
-button {
-  width: 10rem;
-  height: 2.5rem;
-  border-radius: 0.5rem;
-  color: white;
-  background-color: rgb(17, 88, 160);
-}
-button:hover {
-  background-color: rgb(35, 58, 70);
-}
-@media screen and (min-width: 950px) {
+@media screen and (max-width: 949px) {
   .table-holder {
     width: 100%;
+    margin-top: 15rem;
+  }
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 95%;
+    zoom: 85%;
+  }
+  table {
+    height: fit-content;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+  }
+  .col-1 {
+    width: 45%;
+  }
+  .col-2 {
+    width: 25%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 5%;
+  }
+  thead {
+    background-color: rgb(17, 88, 160);
+    color: white;
+    font-size: 1.2rem;
+  }
+  td {
+    padding: 0.4rem 0.8rem;
+  }
+  tbody {
+    padding: 0.4rem 0.4rem;
+  }
+  tfoot {
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+  .edit {
+    color: red;
+  }
+  .add-set {
+    color: red;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  button:last-child {
+    margin-left: 4rem;
+  }
+  button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(17, 88, 160);
+  }
+  button:hover {
+    background-color: rgb(35, 58, 70);
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1279px) {
+  .table-holder {
+    width: 90%;
     margin-top: 9.5rem;
   }
   .table-container {
@@ -123,7 +129,6 @@ button:hover {
   }
   button:last-child {
     margin-top: 1.8rem;
-    margin-left: 0rem;
   }
   button {
     width: 10rem;
@@ -136,6 +141,7 @@ button:hover {
     background-color: rgb(35, 58, 70);
   }
 }
+
 @media screen and (min-width: 1280px) {
   .table-holder {
     width: 1000px;
@@ -191,8 +197,6 @@ button:hover {
   .buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 150px;
     height: 100px;
     margin-left: 100px;

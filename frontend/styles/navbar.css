@@ -1,69 +1,72 @@
-.navbar {
-  position: fixed;
-  background: rgb(35, 58, 70);
-  display: flex;
-  flex-direction: row;
-  height: fit-content;
-  width: 100%;
-  font-weight: bold;
-}
-.navbar-site-name {
-  display: flex;
-}
-.navbar-site-name > a {
-  color: white;
-  text-decoration: none;
-  margin: auto;
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
-.navbar-links {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-.navbar-links > li,
-a {
-  padding: 0.5rem;
-  min-width: fit-content;
-  margin: auto;
-  color: white;
-  text-decoration: none;
-}
-.navbar-links > li:hover {
-  background-color: rgb(17, 88, 160);
-  border-radius: 1rem;
-}
-.subbar {
-  position: fixed;
-  margin-top: 10.5rem;
-  background: rgb(17, 88, 160);
-  display: flex;
-  flex-direction: column;
-  height: 50px;
-  width: 100%;
-  font-weight: bold;
-  font-size: 15;
-}
-.subbar-links {
-  margin-left: auto;
-  margin-right: 120px;
-  display: flex;
-  flex-direction: row;
-  font-size: 125%;
-}
-.subbar-links > a {
-  padding: 14px;
-  min-width: fit-content;
-  margin: auto;
-  color: white;
-  text-decoration: none;
-}
-.subbar-links > a:hover {
-  background-color: rgb(35, 58, 70);
+@media screen and (max-width: 949px) {
+  .navbar {
+    position: fixed;
+    background: rgb(35, 58, 70);
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    font-weight: bold;
+  }
+  .navbar-site-name {
+    display: flex;
+  }
+  .navbar-site-name > a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .navbar-links > li,
+  a {
+    padding: 0.5rem;
+    min-width: fit-content;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+  }
+  .navbar-links > li:hover {
+    background-color: rgb(17, 88, 160);
+    border-radius: 1rem;
+  }
+  .subbar {
+    position: fixed;
+    margin-top: 10.5rem;
+    background: rgb(17, 88, 160);
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15;
+  }
+  .subbar-links {
+    margin-left: auto;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: row;
+    font-size: 125%;
+    list-style-type: none;
+  }
+  .subbar-links > a {
+    padding: 14px;
+    min-width: fit-content;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+  }
+  .subbar-links > a:hover {
+    background-color: rgb(35, 58, 70);
+  }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 950px) and (max-width: 1279px) {
   .navbar {
     position: fixed;
     background: rgb(35, 58, 70);
@@ -90,8 +93,10 @@ a {
     display: flex;
     flex-direction: row;
     font-size: 1.3rem;
+    list-style-type: none;
   }
-  .navbar-links {
+  .navbar-links > li,
+  a {
     padding: 0.5rem;
     min-width: fit-content;
     color: white;
@@ -109,17 +114,20 @@ a {
     flex-direction: row;
     width: 100%;
     height: 3rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .subbar-links {
-    margin-right: 2rem;
+    margin-left: auto;
+    margin-right: 3rem;
     display: flex;
     flex-direction: row;
     list-style-type: none;
   }
-  .subbar-links {
+  .subbar-links > a {
+    padding: 14px;
     min-width: fit-content;
     color: white;
+    text-decoration: none;
   }
   .subbar-links > li:hover {
     background-color: rgb(35, 58, 70);
@@ -144,12 +152,13 @@ a {
     color: white;
     text-decoration: none;
     margin: auto;
-    margin-left: 150px;
-    font-size: 140%;
+    margin-left: 6rem;
+    font-size: 2rem;
   }
   .navbar-links {
     margin-left: auto;
-    margin-right: 150px;
+    margin-right: 6rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -158,9 +167,7 @@ a {
   a {
     padding: 12px;
     min-width: fit-content;
-    margin: auto;
     color: white;
-    overflow: hidden;
     text-decoration: none;
   }
   .navbar-links > li:hover {
@@ -176,7 +183,7 @@ a {
     height: 50px;
     width: 100%;
     font-weight: bold;
-    font-size: 15;
+    font-size: 15px;
   }
   .subbar-links {
     margin-left: auto;
@@ -184,6 +191,7 @@ a {
     display: flex;
     flex-direction: row;
     font-size: 125%;
+    list-style-type: none;
   }
   .subbar-links > a {
     padding: 14px;

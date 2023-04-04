@@ -1,91 +1,105 @@
-.table-holder {
-  width: 100%;
-  margin: auto;
-  margin-top: 15rem;
+@media screen and (max-width: 949px) {
+  .table-holder {
+    width: 100%;
+    margin: auto;
+    margin-top: 18rem;
+    zoom: 80%;
+  }
+  .table-container {
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .cal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 9rem;
+    height: 1rem;
+    border-radius: 1.2rem;
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .cal:hover {
+    background-color: darkgreen;
+  }
+  .main-table {
+    min-width: fit-content;
+    height: fit-content;
+    margin: auto;
+  }
+  .sub-table {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2.5rem;
+  }
+  .col-1 {
+    background-color: whitesmoke;
+  }
+  .col-2 {
+    background-color: whitesmoke;
+  }
+  .col-4 {
+    background-color: whitesmoke;
+  }
+  .header {
+    text-align: center;
+  }
+  thead {
+    background-color: rgb(17, 88, 160);
+    color: white;
+  }
+  td {
+    padding: 4px 10px;
+  }
+  tbody {
+    padding: 5px 5px;
+    font-size: 15;
+  }
+  tfoot {
+    height: 45px;
+    color: blue;
+    font-size: 15;
+    background-color: white;
+  }
+  .text-window {
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid 1px grey;
+    margin: auto;
+    margin-top: 2rem;
+    min-height: 8rem;
+    width: 90%;
+  }
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
 }
-.table-container {
-  justify-content: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-.cal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 9rem;
-  height: 1rem;
-  border-radius: 1.2rem;
-  background-color: green;
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-.cal:hover {
-  background-color: darkgreen;
-}
-.main-table {
-  min-width: fit-content;
-  height: fit-content;
-  margin: auto;
-}
-.sub-table {
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  margin-top: 2.5rem;
-}
-.col-1 {
-  background-color: whitesmoke;
-}
-.col-2 {
-  background-color: whitesmoke;
-}
-.col-4 {
-  background-color: whitesmoke;
-}
-.header {
-  text-align: center;
-}
-thead {
-  background-color: rgb(17, 88, 160);
-  color: white;
-}
-td {
-  padding: 4px 10px;
-}
-tbody {
-  padding: 5px 5px;
-  font-size: 15;
-}
-tfoot {
-  height: 45px;
-  color: blue;
-  font-size: 15;
-  background-color: white;
-}
-.text-window {
-  text-align: center;
-  background-color: whitesmoke;
-  border: solid 1px grey;
-  margin: auto;
-  margin-top: 2rem;
-  min-height: 8rem;
-}
-.delete {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: red;
-}
-@media screen and (min-width: 950px) {
+
+@media screen and (min-width: 950px) and (max-width: 1279px) {
+  .table-holder {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .table-container {
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   .cal {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     width: 160px;
-    height: 15px;
+    height: 20px;
     border-radius: 20px;
     background-color: green;
     color: white;
@@ -95,25 +109,15 @@ tfoot {
   .cal:hover {
     background-color: darkgreen;
   }
-  .table-holder {
-    width: 1200px;
-    margin: auto;
-    margin-top: 150px;
-  }
-  .table-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
   .main-table {
-    width: 750px;
+    margin: auto;
+    width: fit-content;
     height: fit-content;
   }
   .sub-table {
-    width: 350px;
+    width: fit-content;
     height: fit-content;
-    margin-left: 50px;
+    margin-left: auto;
   }
   .col-1 {
     background-color: whitesmoke;
@@ -156,16 +160,22 @@ tfoot {
     justify-content: center;
     color: red;
   }
+  .sum-note {
+    display: flex;
+    margin-top: 50px;
+  }
+
   .text-window {
     text-align: center;
     background-color: whitesmoke;
     border: solid 1px grey;
     width: 350px;
     height: 400px;
-    margin-top: 50px;
+    margin-right: auto;
     margin-left: 50px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .cal {
     display: flex;
