@@ -8,6 +8,13 @@ main {
   display: flex;
   flex-direction: column;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+p a {
+  text-decoration: underline;
+}
 article {
   width: 100%;
   text-align: center;
@@ -18,7 +25,7 @@ footer {
   height: fit-content;
   text-align: center;
 }
-footer > p {
+footer p {
   margin: 0%;
   padding: 1rem;
   color: white;

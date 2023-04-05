@@ -4,65 +4,58 @@
     position: fixed;
     background: rgb(35, 58, 70);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: fit-content;
     width: 100%;
     font-weight: bold;
   }
   .navbar-site-name {
-    display: flex;
-  }
-  .navbar-site-name > a {
-    color: white;
-    text-decoration: none;
     margin: auto;
-    margin-left: 1rem;
     font-size: 1.5rem;
   }
   .navbar-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     list-style-type: none;
+    padding: 0%;
   }
-  .navbar-links > li,
-  a {
-    padding: 0.5rem;
-    min-width: fit-content;
+  .navbar-links li {
     margin: auto;
-    color: white;
-    text-decoration: none;
+    padding: 0.5rem;
   }
-  .navbar-links > li:hover {
+  .navbar-links a {
+    padding: 0.5rem;
+  }
+  .navbar-links a:hover {
     background-color: rgb(17, 88, 160);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
   .subbar {
-    position: fixed;
-    margin-top: 10.5rem;
-    background: rgb(17, 88, 160);
     display: flex;
-    flex-direction: column;
-    height: 50px;
+    position: fixed;
+    margin-top: 5.5rem;
+    background: rgb(17, 88, 160);
+    height: 3rem;
     width: 100%;
     font-weight: bold;
-    font-size: 15;
   }
   .subbar-links {
-    margin-left: auto;
-    margin-right: 120px;
     display: flex;
     flex-direction: row;
-    font-size: 125%;
     list-style-type: none;
-  }
-  .subbar-links > a {
-    padding: 14px;
-    min-width: fit-content;
     margin: auto;
-    color: white;
-    text-decoration: none;
+    padding: 0%;
+    font-size: 0.8rem;
   }
-  .subbar-links > a:hover {
+  .subbar-links li {
+    margin: auto;
+  }
+  .subbar-links a {
+    padding: 0.6rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+  }
+  .subbar-links a:hover {
     background-color: rgb(35, 58, 70);
   }
 }
@@ -81,57 +74,56 @@
   }
   .navbar-site-name {
     display: flex;
-  }
-  .navbar-site-name > a {
-    color: white;
-    text-decoration: none;
     margin: auto;
     margin-left: 2rem;
     font-size: 1.5rem;
   }
   .navbar-links {
-    margin-left: auto;
-    margin-right: 2rem;
     display: flex;
     flex-direction: row;
-    font-size: 1.3rem;
     list-style-type: none;
+    margin-left: auto;
+    margin-right: 2rem;
+    padding: 0%;
+    font-size: 1.3rem;
   }
-  .navbar-links > li,
-  a {
-    padding: 0.5rem;
-    min-width: fit-content;
-    color: white;
-    text-decoration: none;
+  .navbar-links li {
+    margin: auto;
   }
-  .navbar-links > li:hover {
+  .navbar-links a {
+    padding: 1rem;
+  }
+  .navbar-links a:hover {
     background-color: rgb(17, 88, 160);
     border-radius: 1rem;
   }
   .subbar {
+    display: flex;
+    flex-direction: row;
     position: fixed;
     margin-top: 5rem;
     background: rgb(17, 88, 160);
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 3rem;
+    font-weight: bold;
     font-size: 1rem;
   }
   .subbar-links {
-    margin-left: auto;
-    margin-right: 3rem;
     display: flex;
-    flex-direction: row;
     list-style-type: none;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: 2rem;
+    padding: 0%;
+    font-size: 1.1rem;
   }
-  .subbar-links > a {
-    padding: 14px;
-    min-width: fit-content;
-    color: white;
-    text-decoration: none;
+  .subbar-links li {
+    margin: auto;
   }
-  .subbar-links > li:hover {
+  .subbar-links a {
+    padding: 0.9rem;
+  }
+  .subbar-links a:hover {
     background-color: rgb(35, 58, 70);
   }
 }
@@ -150,60 +142,56 @@
   }
   .navbar-site-name {
     display: flex;
-  }
-  .navbar-site-name > a {
-    color: white;
-    text-decoration: none;
     margin: auto;
     margin-left: 6rem;
     font-size: 2rem;
   }
   .navbar-links {
-    margin-left: auto;
-    margin-right: 6rem;
-    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    margin-left: auto;
+    margin-right: 6rem;
+    padding: 0%;
+    font-size: 1.5rem;
   }
-  .navbar-links > li,
-  a {
+  .navbar-links li {
+    margin: auto;
+  }
+  .navbar-links a {
     padding: 12px;
-    min-width: fit-content;
-    color: white;
-    text-decoration: none;
   }
-  .navbar-links > li:hover {
+  .navbar-links a:hover {
     background-color: rgb(17, 88, 160);
     border-radius: 10px;
   }
   .subbar {
+    display: flex;
+    flex-direction: row;
     position: fixed;
     margin-top: 80px;
     background: rgb(17, 88, 160);
-    display: flex;
-    flex-direction: row;
     height: 50px;
     width: 100%;
     font-weight: bold;
     font-size: 15px;
   }
   .subbar-links {
-    margin-left: auto;
-    margin-right: 120px;
     display: flex;
-    flex-direction: row;
-    font-size: 125%;
     list-style-type: none;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: 80px;
+    padding: 0%;
+    font-size: 125%;
   }
-  .subbar-links > a {
-    padding: 14px;
-    min-width: fit-content;
+  .subbar-links li {
     margin: auto;
-    color: white;
-    text-decoration: none;
   }
-  .subbar-links > a:hover {
+  .subbar-links a {
+    padding: 14px;
+  }
+  .subbar-links a:hover {
     background-color: rgb(35, 58, 70);
   }
 }
