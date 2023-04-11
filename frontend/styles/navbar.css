@@ -1,90 +1,74 @@
-@media screen and (max-width: 949px) {
-  /* revamp */
-  .navbar {
-    position: fixed;
-    background: rgb(35, 58, 70);
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    width: 100%;
-    font-weight: bold;
-  }
-  .navbar-site-name {
-    margin: auto;
-    font-size: 1.5rem;
-  }
-  .navbar-links {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0%;
-  }
-  .navbar-links li {
-    margin: auto;
-    padding: 0.5rem;
-  }
-  .navbar-links a {
-    padding: 0.5rem;
-  }
-  .navbar-links a:hover {
-    background-color: rgb(17, 88, 160);
-    border-radius: 0.5rem;
-  }
-  .subbar {
-    display: flex;
-    position: fixed;
-    margin-top: 5.5rem;
-    background: rgb(17, 88, 160);
-    height: 3rem;
-    width: 100%;
-    font-weight: bold;
-  }
-  .subbar-links {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: auto;
-    padding: 0%;
-    font-size: 0.8rem;
-  }
-  .subbar-links li {
-    margin: auto;
-  }
-  .subbar-links a {
-    padding: 0.6rem;
-    padding-top: 1.1rem;
-    padding-bottom: 1.1rem;
-  }
-  .subbar-links a:hover {
-    background-color: rgb(35, 58, 70);
-  }
+.navbar {
+  position: sticky;
+  height: fit-content;
+}
+.mainbar {
+  background: rgb(35, 58, 70);
+  height: fit-content;
+  font-weight: bold;
+}
+.navbar-site-name {
+  font-size: 1.5rem;
+}
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.3rem;
+  padding: 0%;
+  margin: 0%;
+}
+.navbar-links li {
+  padding: 0.6rem;
+}
+.navbar-links li:hover {
+  background-color: rgb(17, 88, 160);
+}
+.li-item {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+.navbar ul:has(li .menu-btn:checked) .li-item {
+  display: block;
+}
+.subbar {
+  position: relative;
+  height: fit-content;
+  font-weight: bold;
+}
+.subbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.2rem;
+  padding: 0%;
+  margin: 0%;
+}
+.subbar-links li {
+  padding: 0.3rem;
+}
+.subbar-links li:hover {
+  background-color: rgb(35, 58, 70);
 }
 
-@media screen and (min-width: 950px) and (max-width: 1279px) {
-  /* revamp */
-  .navbar {
-    position: fixed;
-    background: rgb(35, 58, 70);
-    display: flex;
-    flex-direction: row;
-    height: 5rem;
+@media screen and (min-width: 950px) {
+  .mainbar {
+    height: 3rem;
     width: 100%;
     font-weight: bold;
     font-size: 1.2rem;
   }
   .navbar-site-name {
-    display: flex;
-    margin: auto;
-    margin-left: 2rem;
-    font-size: 1.5rem;
+    flex: 1;
   }
   .navbar-links {
     display: flex;
-    flex-direction: row;
     list-style-type: none;
-    margin-left: auto;
-    margin-right: 2rem;
-    padding: 0%;
     font-size: 1.3rem;
   }
   .navbar-links li {
@@ -93,15 +77,17 @@
   .navbar-links a {
     padding: 1rem;
   }
-  .navbar-links a:hover {
-    background-color: rgb(17, 88, 160);
-    border-radius: 1rem;
+  .toggle {
+    display: none;
+  }
+  .li-item {
+    display: block;
+    width: auto;
   }
   .subbar {
     display: flex;
-    flex-direction: row;
-    position: fixed;
-    margin-top: 5rem;
+    position: relative;
+    height: fit-content;
     background: rgb(17, 88, 160);
     width: 100%;
     height: 3rem;
@@ -113,85 +99,10 @@
     list-style-type: none;
     margin: 0%;
     margin-left: auto;
-    margin-right: 2rem;
     padding: 0%;
     font-size: 1.1rem;
   }
-  .subbar-links li {
-    margin: auto;
-  }
   .subbar-links a {
     padding: 0.9rem;
-  }
-  .subbar-links a:hover {
-    background-color: rgb(35, 58, 70);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  /* revamp */
-  .navbar {
-    position: fixed;
-    background: rgb(35, 58, 70);
-    display: flex;
-    flex-direction: row;
-    height: 80px;
-    width: 100%;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  .navbar-site-name {
-    display: flex;
-    margin: auto;
-    margin-left: 6rem;
-    font-size: 2rem;
-  }
-  .navbar-links {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: 6rem;
-    padding: 0%;
-    font-size: 1.5rem;
-  }
-  .navbar-links li {
-    margin: auto;
-  }
-  .navbar-links a {
-    padding: 12px;
-  }
-  .navbar-links a:hover {
-    background-color: rgb(17, 88, 160);
-    border-radius: 10px;
-  }
-  .subbar {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    margin-top: 80px;
-    background: rgb(17, 88, 160);
-    height: 50px;
-    width: 100%;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  .subbar-links {
-    display: flex;
-    list-style-type: none;
-    margin: 0%;
-    margin-left: auto;
-    margin-right: 80px;
-    padding: 0%;
-    font-size: 125%;
-  }
-  .subbar-links li {
-    margin: auto;
-  }
-  .subbar-links a {
-    padding: 14px;
-  }
-  .subbar-links a:hover {
-    background-color: rgb(35, 58, 70);
   }
 }

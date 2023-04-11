@@ -2,7 +2,6 @@
   /* remove redundancies */
   .table-holder {
     width: 100%;
-    margin-top: 10rem;
   }
   .table-container {
     display: flex;
@@ -53,7 +52,6 @@
   }
   .buttons {
     display: flex;
-    flex-direction: row;
     margin: auto;
     margin-top: 2rem;
   }
@@ -80,7 +78,6 @@
   }
   .table-container {
     display: flex;
-    flex-direction: row;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
@@ -153,7 +150,6 @@
   }
   .table-container {
     display: flex;
-    flex-direction: row;
     padding-top: 25px;
     padding-bottom: 25px;
   }
