@@ -2,6 +2,7 @@
   /* remove redundancies */
   .table-holder {
     width: 100%;
+    margin-top: 1rem;
   }
   .table-container {
     display: flex;
@@ -71,10 +72,9 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
-  /* remove redundancies */
   .table-holder {
     width: 90%;
-    margin-top: 9.5rem;
+    margin-top: 3rem;
   }
   .table-container {
     display: flex;
@@ -142,11 +142,10 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* remove redundancies */
   .table-holder {
     width: 1000px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
   }
   .table-container {
     display: flex;

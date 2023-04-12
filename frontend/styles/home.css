@@ -1,5 +1,6 @@
 @media screen and (max-width: 949px) {
-  /* Use CSS Grid */
+  /* Is CSS grid viable */
+  /* remove redundancies */
   .home-banner {
     height: fit-content;
     margin-top: 0.6rem;
@@ -53,11 +54,9 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
-  /* Use CSS Grid */
   .home-banner {
     height: fit-content;
-    margin-top: 5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .home-banner > p {
     margin: auto;
@@ -117,16 +116,15 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* Use CSS Grid */
   .home-banner {
     height: 600px;
-    margin-top: 80px;
-    font-size: 50px;
+    font-size: 40px;
   }
   .home-banner > p {
-    margin: auto;
-    margin-top: 60px;
+    /* why cant i center this any other way */
     width: 1200px;
+    margin: auto;
+    margin-top: 120px;
   }
   .workout-container {
     background-color: rgb(22, 55, 87);

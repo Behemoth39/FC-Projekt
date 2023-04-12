@@ -1,5 +1,6 @@
 @media screen and (max-width: 949px) {
-  /* Use CSS Grid */
+  /* Is CSS grid viable */
+  /* remove redundancies */
   .table-holder {
     width: 100%;
     margin: auto;
@@ -85,15 +86,14 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
-  /* Use CSS Grid */
   .table-holder {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 3rem;
   }
   .table-container {
     justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .cal {
     display: flex;
@@ -105,7 +105,7 @@
     border-radius: 1.2rem;
     background-color: green;
     color: white;
-    font-size: 20;
+    font-size: 1.2rem;
     text-decoration: none;
   }
   .cal:hover {
@@ -123,18 +123,18 @@
   }
   .col-1 {
     background-color: whitesmoke;
-    width: 170px;
+    width: 11rem;
   }
   .col-2 {
     background-color: whitesmoke;
-    width: 100px;
+    width: 6rem;
   }
   .col-3 {
-    width: 20px;
+    width: 2rem;
   }
   .col-4 {
-    width: 60px;
     background-color: whitesmoke;
+    width: 4rem;
   }
   .header {
     text-align: center;
@@ -144,16 +144,16 @@
     color: white;
   }
   td {
-    padding: 4px 10px;
+    padding: 0.2rem 0.5rem;
   }
   tbody {
-    padding: 5px 5px;
-    font-size: 15;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
   }
   tfoot {
-    height: 45px;
+    height: 3rem;
     color: blue;
-    font-size: 15;
+    font-size: 1rem;
     background-color: white;
   }
   .delete {
@@ -164,22 +164,21 @@
   }
   .sum-note {
     display: flex;
-    margin-top: 50px;
+    margin-top: 4rem;
   }
 
   .text-window {
     text-align: center;
     background-color: whitesmoke;
     border: solid 1px grey;
-    width: 350px;
-    height: 400px;
+    width: 20rem;
+    height: 25rem;
     margin-right: auto;
-    margin-left: 50px;
+    margin-left: 4rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  /* Use CSS Grid */
   .cal {
     display: flex;
     align-items: center;
@@ -190,7 +189,7 @@
     border-radius: 20px;
     background-color: green;
     color: white;
-    font-size: 20;
+    font-size: 20px;
     text-decoration: none;
   }
   .cal:hover {
@@ -199,7 +198,7 @@
   .table-holder {
     width: 1200px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
   }
   .table-container {
     display: flex;

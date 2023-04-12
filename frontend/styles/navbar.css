@@ -23,7 +23,7 @@
 .navbar-links li {
   padding: 0.6rem;
 }
-.navbar-links li:hover {
+.navbar-links a:hover {
   background-color: rgb(17, 88, 160);
 }
 .li-item {
@@ -52,13 +52,13 @@
 .subbar-links li {
   padding: 0.3rem;
 }
-.subbar-links li:hover {
+.subbar-links a:hover {
   background-color: rgb(35, 58, 70);
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 900px) {
   .mainbar {
-    height: 3rem;
+    padding: 0.5rem 0rem;
     width: 100%;
     font-weight: bold;
     font-size: 1.2rem;
@@ -106,3 +106,4 @@
     padding: 0.9rem;
   }
 }
+/* Maybe one for screens larger than 2560 as well */
