@@ -117,14 +117,14 @@
 
 @media screen and (min-width: 1280px) {
   .home-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 600px;
     font-size: 40px;
   }
-  .home-banner > p {
-    /* why cant i center this any other way */
+  .home-banner p {
     width: 1200px;
-    margin: auto;
-    margin-top: 120px;
   }
   .workout-container {
     background-color: rgb(22, 55, 87);

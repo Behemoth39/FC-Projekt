@@ -159,16 +159,16 @@
     border-collapse: collapse;
   }
   .col-1 {
-    width: 220px;
+    width: 45%;
   }
   .col-2 {
-    width: 150px;
+    width: 25%;
   }
   .col-3 {
-    width: 150px;
+    width: 25%;
   }
   .col-4 {
-    width: 40px;
+    width: 5%;
   }
   thead {
     background-color: rgb(17, 88, 160);
