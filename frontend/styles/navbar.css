@@ -1,6 +1,8 @@
 .navbar-mobile {
-  position: sticky;
+  /* varför funkar inte sticky? */
   height: fit-content;
+  position: sticky;
+  top: 0px;
 }
 .navbar-screen {
   display: none;
@@ -43,33 +45,13 @@
 .navbar-mobile ul:has(li .menu-btn:checked) .li-item {
   display: block;
 }
-.subbar {
-  position: relative;
-  height: fit-content;
-  font-weight: bold;
-}
-.subbar-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-  font-size: 1.2rem;
-  padding: 0%;
-  margin: 0%;
-}
-.subbar-links li {
-  padding: 0.3rem;
-}
-.subbar-links a:hover {
-  background-color: rgb(35, 58, 70);
-}
 
 @media screen and (min-width: 900px) {
   .navbar-screen {
     display: block;
-    position: sticky;
     height: fit-content;
+    position: sticky;
+    top: 0px;
   }
   .navbar-mobile {
     display: none;
@@ -113,6 +95,7 @@
   }
   .subbar-links {
     display: flex;
+    align-items: center;
     list-style-type: none;
     margin: 0%;
     margin-left: auto;
@@ -121,6 +104,12 @@
   }
   .subbar-links a {
     padding: 0.9rem;
+  }
+  .subbar-links li {
+    padding: 0.3rem;
+  }
+  .subbar-links a:hover {
+    background-color: rgb(35, 58, 70);
   }
 }
 /* Maybe one for screens larger than 2560 as well */
