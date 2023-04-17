@@ -1,26 +1,35 @@
+:root {
+  --max-width: 1200px;
+}
+
 html {
   font-family: sans-serif;
 }
+
 body {
   margin: 0%;
 }
+
 main {
   display: flex;
   flex-direction: column;
 }
+
 a {
   text-decoration: none;
-  color: white;
+  color: var(--secondary-text-color);
 }
 p a {
   text-decoration: underline;
 }
+
 article {
   width: 100%;
   text-align: center;
 }
+
 footer {
-  background-color: rgb(35, 58, 70);
+  background-color: var(--primary-color);
   width: 100%;
   height: fit-content;
   text-align: center;
@@ -28,5 +37,5 @@ footer {
 footer p {
   margin: 0%;
   padding: 1rem;
-  color: white;
+  color: var(--secondary-text-color);
 }

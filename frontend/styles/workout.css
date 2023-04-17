@@ -15,7 +15,7 @@
   }
   table {
     height: fit-content;
-    background-color: whitesmoke;
+    background-color: var(--light-color);
     border-collapse: collapse;
   }
   .col-1 {
@@ -31,8 +31,8 @@
     width: 5%;
   }
   thead {
-    background-color: rgb(17, 88, 160);
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
     font-size: 1.2rem;
   }
   td {
@@ -46,10 +46,10 @@
     font-size: 1.2rem;
   }
   .edit {
-    color: red;
+    color: var(--edit-color);
   }
   .add-set {
-    color: red;
+    color: var(--secondary-edit-color);
   }
   .buttons {
     display: flex;
@@ -63,11 +63,11 @@
     width: 10rem;
     height: 2.5rem;
     border-radius: 0.5rem;
-    color: white;
-    background-color: rgb(17, 88, 160);
+    color: var(--secondary-text-color);
+    background-color: var(--btn-dark-color);
   }
   button:hover {
-    background-color: rgb(35, 58, 70);
+    background-color: var(--btn-light-color);
   }
 }
 
@@ -85,7 +85,7 @@
     margin: auto;
     min-width: 700px;
     height: fit-content;
-    background-color: whitesmoke;
+    background-color: var(--light-color);
     border-collapse: collapse;
   }
   .col-1 {
@@ -101,8 +101,8 @@
     width: 5%;
   }
   thead {
-    background-color: rgb(17, 88, 160);
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
     font-size: 1.3rem;
   }
   td {
@@ -116,10 +116,10 @@
     font-size: 1.2rem;
   }
   .edit {
-    color: red;
+    color: var(--edit-color);
   }
   .add-set {
-    color: red;
+    color: var(--secondary-edit-color);
   }
   .buttons {
     display: flex;
@@ -133,11 +133,11 @@
     width: 10rem;
     height: 2.5rem;
     border-radius: 0.5rem;
-    color: white;
-    background-color: rgb(17, 88, 160);
+    color: var(--secondary-text-color);
+    background-color: var(--btn-dark-color);
   }
   button:hover {
-    background-color: rgb(35, 58, 70);
+    background-color: var(--btn-light-color);
   }
 }
 
@@ -155,7 +155,7 @@
   table {
     width: 600px;
     height: fit-content;
-    background-color: whitesmoke;
+    background-color: var(--light-color);
     border-collapse: collapse;
   }
   .col-1 {
@@ -171,8 +171,8 @@
     width: 5%;
   }
   thead {
-    background-color: rgb(17, 88, 160);
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
     font-size: 20;
   }
   td {
@@ -187,10 +187,10 @@
     font-size: 20;
   }
   .edit {
-    color: red;
+    color: var(--edit-color);
   }
   .add-set {
-    color: red;
+    color: var(--secondary-edit-color);
   }
   .buttons {
     display: flex;
@@ -206,10 +206,10 @@
     width: 150px;
     height: 35px;
     border-radius: 10px;
-    color: white;
-    background-color: rgb(17, 88, 160);
+    color: var(--secondary-text-color);
+    background-color: var(--btn-dark-color);
   }
   button:hover {
-    background-color: rgb(35, 58, 70);
+    background-color: var(--btn-light-color);
   }
 }

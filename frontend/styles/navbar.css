@@ -8,7 +8,7 @@
   display: none;
 }
 .mainbar {
-  background: rgb(35, 58, 70);
+  background: var(--primary-color);
   height: fit-content;
   font-weight: bold;
 }
@@ -29,7 +29,7 @@
   padding: 0.6rem;
 }
 .navbar-links a:hover {
-  background-color: rgb(17, 88, 160);
+  background-color: var(--secondary-color);
 }
 .li-item {
   display: none;
@@ -37,7 +37,7 @@
   text-align: center;
 }
 .menu-icon {
-  color: white;
+  color: var(--secondary-text-color);
 }
 .menu-btn {
   display: none;
@@ -87,7 +87,7 @@
     display: flex;
     position: relative;
     height: fit-content;
-    background: rgb(17, 88, 160);
+    background: var(--secondary-color);
     width: 100%;
     height: 3rem;
     font-weight: bold;
@@ -109,7 +109,7 @@
     padding: 0.3rem;
   }
   .subbar-links a:hover {
-    background-color: rgb(35, 58, 70);
+    background-color: var(--primary-color);
   }
 }
 /* Maybe one for screens larger than 2560 as well */
