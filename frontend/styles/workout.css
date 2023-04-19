@@ -1,5 +1,6 @@
 @media screen and (max-width: 949px) {
   /* remove redundancies */
+  /* Is CSS grid viable */
   .table-holder {
     width: 100%;
     margin-top: 1rem;
@@ -13,38 +14,6 @@
     width: 95%;
     zoom: 85%;
   }
-  table {
-    height: fit-content;
-    background-color: var(--light-color);
-    border-collapse: collapse;
-  }
-  .col-1 {
-    width: 45%;
-  }
-  .col-2 {
-    width: 25%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 5%;
-  }
-  thead {
-    background-color: var(--secondary-color);
-    color: var(--secondary-text-color);
-    font-size: 1.2rem;
-  }
-  td {
-    padding: 0.4rem 0.8rem;
-  }
-  tbody {
-    padding: 0.4rem 0.4rem;
-  }
-  tfoot {
-    height: 2rem;
-    font-size: 1.2rem;
-  }
   .edit {
     color: var(--edit-color);
   }
@@ -55,9 +24,6 @@
     display: flex;
     margin: auto;
     margin-top: 2rem;
-  }
-  button:last-child {
-    margin-left: 4rem;
   }
   button {
     width: 10rem;
@@ -88,33 +54,6 @@
     background-color: var(--light-color);
     border-collapse: collapse;
   }
-  .col-1 {
-    width: 45%;
-  }
-  .col-2 {
-    width: 25%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 5%;
-  }
-  thead {
-    background-color: var(--secondary-color);
-    color: var(--secondary-text-color);
-    font-size: 1.3rem;
-  }
-  td {
-    padding: 0.4rem 0.8rem;
-  }
-  tbody {
-    padding: 0.4rem 0.4rem;
-  }
-  tfoot {
-    height: 3rem;
-    font-size: 1.2rem;
-  }
   .edit {
     color: var(--edit-color);
   }
@@ -125,9 +64,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 2.5rem;
-  }
-  button:last-child {
-    margin-top: 1.8rem;
   }
   button {
     width: 10rem;
@@ -142,49 +78,29 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .table-holder {
+  .holder {
+    display: flex;
+    flex-direction: column;
     width: 1000px;
     margin: auto;
     margin-top: 50px;
   }
-  .table-container {
+  .container {
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  table {
-    width: 600px;
+    flex-direction: column;
+    background: var(--light-color);
     height: fit-content;
-    background-color: var(--light-color);
-    border-collapse: collapse;
+    width: 750px;
   }
-  .col-1 {
-    width: 45%;
+  .head,
+  .content {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
   }
-  .col-2 {
-    width: 25%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 5%;
-  }
-  thead {
-    background-color: var(--secondary-color);
+  .head {
+    background: var(--secondary-color);
     color: var(--secondary-text-color);
-    font-size: 20;
-  }
-  td {
-    padding: 5px 10px;
-  }
-  tbody {
-    padding: 5px 5px;
-  }
-  tfoot {
-    height: 45px;
-    font-size: 15;
-    font-size: 20;
   }
   .edit {
     color: var(--edit-color);
@@ -197,10 +113,7 @@
     flex-direction: column;
     width: 150px;
     height: 100px;
-    margin-left: 100px;
-  }
-  button:last-child {
-    margin-top: 20px;
+    margin-left: auto;
   }
   button {
     width: 150px;
@@ -208,6 +121,9 @@
     border-radius: 10px;
     color: var(--secondary-text-color);
     background-color: var(--btn-dark-color);
+  }
+  button:last-child {
+    margin-top: auto;
   }
   button:hover {
     background-color: var(--btn-light-color);
