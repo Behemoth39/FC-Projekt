@@ -8,6 +8,26 @@ const listWorkouts = async () => {
   if (response.status == 200) {
     const data = await response.json();
 
+    // skapa DOM element
+    let div1 = document.createElement("div");
+    let div2 = document.createElement("div");
+    let div3 = document.createElement("div");
+    let div4 = document.createElement("div");
+
+    // Jag har ingen aning om vad jag gör här
+    const listExercises = async () => {
+      data.forEach((exercises) => {
+        const exercise = document.querySelector("#exercise");
+        exercise.append(div1);
+        div1.insertAdjacentHTML("beforeend", `<p>${exercises.sets}</p>`);
+        exercise.append(div2);
+        div2.insertAdjacentHTML("beforeend", `<p>${exercises.reps}</p>`);
+        exercise.append(div3);
+        div3.insertAdjacentHTML("beforeend", `<p>${exercises.weight}</p>`);
+      });
+    };
+
+    // Borde jag loopa igenom hela innan alla element är på rätt plats?
     data.forEach((exercises) => {
       workout.insertAdjacentHTML(
         "beforeend",
@@ -16,11 +36,12 @@ const listWorkouts = async () => {
             <h3>${exercises.exercise}</h3>
             <p class="edit">E</p>
           </div>
-          <div class="content">
-            <p>${exercises.sets}</p>
+          <div class="content" id="exercise"> 
+            ${listExercises}
+            <!--p>${exercises.sets}</!--p>
             <p>${exercises.reps}</p>
             <p>${exercises.weight}</p>
-            <p class="edit">E</p>
+            <p-- class="edit">E</p-->
           </div>
           <div class="add-set">Add set</div>
         </div>
@@ -30,15 +51,6 @@ const listWorkouts = async () => {
         </div>`
       );
     });
-
-    /*for (let i = 0; i < exercise.sets; i++) {
-      <div class='content'>
-        <p>${i++}</p>
-        <p>${exercises.reps}</p>
-        <p>${exercises.weight}</p>
-        <p class='edit'>E</p>
-      </div>;
-    }*/
   }
 };
 
