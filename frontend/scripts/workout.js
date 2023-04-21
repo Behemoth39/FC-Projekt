@@ -7,12 +7,12 @@ const listWorkouts = async () => {
 
   if (response.status == 200) {
     const data = await response.json();
+    console.log(data);
 
     // skapa DOM element
     let div1 = document.createElement("div");
     let div2 = document.createElement("div");
     let div3 = document.createElement("div");
-    let div4 = document.createElement("div");
 
     // Jag har ingen aning om vad jag gör här
     const listExercises = async () => {
@@ -37,11 +37,7 @@ const listWorkouts = async () => {
             <p class="edit">E</p>
           </div>
           <div class="content" id="exercise"> 
-            ${listExercises}
-            <!--p>${exercises.sets}</!--p>
-            <p>${exercises.reps}</p>
-            <p>${exercises.weight}</p>
-            <p-- class="edit">E</p-->
+            ${listExercises()}
           </div>
           <div class="add-set">Add set</div>
         </div>
