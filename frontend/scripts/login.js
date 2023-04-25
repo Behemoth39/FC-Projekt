@@ -87,7 +87,6 @@ function addSignInUP() {
   app.h1SignIn.style.display = "block";
   app.h1SignUp.style.display = "none";
   app.errorMsgCreate.classList.add("error-msg");
-  app.loginMenu.style.display = "flex";
 }
 
 app.login.addEventListener("click", (e) => {
@@ -121,14 +120,6 @@ document.getElementById("login-btn-up").addEventListener("click", (e) => {
   removeSignInUP();
 });
 
-function adduser() {
-  // <= remove when done, used to see saved password and usernamne
-  let saved1 = app.savedUsername.map((user) => `<li>${user}</li>`).join("\n");
-  document.querySelector("#ulus").innerHTML = saved1;
-  let saved2 = app.savedPassword.map((user) => `<li>${user}</li>`).join("\n");
-  document.querySelector("#ulpa").innerHTML = saved2;
-}
-
 document.getElementById("create-btn").addEventListener("click", (e) => {
   e.preventDefault;
   if (app.loginForm.user.value.length < 5 || app.loginForm.pass.value.length < 5) {
@@ -141,7 +132,6 @@ document.getElementById("create-btn").addEventListener("click", (e) => {
     app.savedPassword.push(app.loginForm.pass.value);
     app.loginForm.user.value = null;
     app.loginForm.pass.value = null;
-    adduser(); // <= remove when done
     addSignInUP();
   }
 });
@@ -154,8 +144,9 @@ let saveduser =  localStorage.setItem('username');
 let savedpass =  localStorage.setItem('password');
 localStorage.removeItem('password');
 localStorage.clear;  
- */
+*/
 
+// Taget från en tidigare meny jag gjort //
 /*document.getElementById("login-btn").addEventListener("click", (e) => {
   e.preventDefault;
   let username = app.loginForm.user.value;
@@ -169,17 +160,17 @@ localStorage.clear;
   }
 });
 
-
-to keep users logged in
 if (app.userLogged) {
   removeLoginMenu();
 } else {
   addLoginMenu();
+}
 
-  document.getElementById("log-out").addEventListener("click", (e) => {
+document.getElementById("log-out").addEventListener("click", (e) => {
   e.preventDefault;
   addLoginMenu();
   clearForm();
   localStorage.clear();
 });
-}*/
+
+*/
