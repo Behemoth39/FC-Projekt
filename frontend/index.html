@@ -42,26 +42,48 @@
             <li><a href="./pages/workout.html">Workout</a></li>
             <li><a href="">About</a></li>
             <li id="log-in"><a href="">Login | Signup</a></li>
-            <li class="hidden" id="log-out"><a href="">Logout</a></li>
+            <li id="log-out"><a href="">Logout</a></li>
           </ul>
         </div>
       </nav>
-      <div class="loginContainer hidden" id="login-menu">
+      <div class="loginContainer" id="login-menu">
         <div id="closebtn">X</div>
-        <form class="login-windows" id="login-form">
-          <p id="error-msg-login" class="hidden">Felaktigt användarnamn/lösenord!</p>
-          <h2 id="log-h2">LOGIN</h2>
-          <input id="user" class="login-window" placeholder="namn" type="text" />
-          <input id="pass" class="login-window" placeholder="lösenord" type="password" />
+        <h1 id="h1-sign-in">Sign In</h1>
+        <h1 id="h1-sign-up">Sign Up</h1>
+        <form id="login-form" class="login-windows">
+          <p id="error-msg-login" class="error-msg">Invalid Username/Password!</p>
+          <p id="error-msg-create" class="error-msg">
+            Username and password needs to be at least 5 characters in lenght!
+          </p>
+          <input
+            id="user"
+            class="login-window"
+            name="array[]"
+            placeholder="User Name"
+            type="text"
+          />
+          <input
+            id="pass"
+            class="login-window"
+            name="array[]"
+            placeholder="Password"
+            type="password"
+          />
           <div class="btn-row">
             <div>
-              <input type="button" value="LOGGA IN" id="login-btn" class="btn" />
+              <input type="button" value="SIGN IN" id="login-btn-in" class="btn" />
             </div>
             <div>
-              <input type="button" value="FÖRSÖK IGEN" id="again-btn" class="btn hidden" />
+              <input type="button" value="SIGN UP" id="login-btn-up" class="btn" />
+            </div>
+            <div>
+              <input type="button" value="Create Account" id="create-btn" class="btn" />
             </div>
           </div>
         </form>
+        <!-- Remove when done -->
+        <ul id="ulus"></ul>
+        <ul id="ulpa"></ul>
       </div>
     </header>
     <main>

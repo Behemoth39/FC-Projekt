@@ -5,18 +5,59 @@
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
-  height: 380px;
+  height: 350px;
   width: 400px;
-  display: flex;
+  display: none;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: var(--secondary-text-color);
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
 }
 .loginContainer p {
-  margin: 10px;
+  margin-top: -10px;
   color: red;
+}
+.login-windows {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.login-window {
+  padding: 15px;
+  width: 310px;
+}
+.login-window:last-of-type {
+  margin-top: 20px;
+}
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.btn-row > div {
+  margin-top: 20px;
+}
+.btn-row > div:first-of-type {
+  margin-right: 15px;
+}
+.btn {
+  width: fit-content;
+  color: white;
+  background: linear-gradient(90deg, rgb(10, 50, 150) 0%, rgba(199, 0, 255, 0.84) 100%);
+  padding: 15px 45px;
+  font-size: 75%;
+  font-weight: 900;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+}
+.btn:hover {
+  color: rgb(0, 255, 255);
+  transform: scaleX(0.9) scaleY(0.9);
+}
+.error-msg {
+  display: none;
 }
 #closebtn {
   position: absolute;
@@ -30,49 +71,20 @@
   border-radius: 15px;
   cursor: pointer;
 }
-#log-h1 {
-  color: black;
-  margin-bottom: 25px;
-  font-size: 250%;
-}
-.login-windows {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.login-window {
-  padding: 8px;
-  width: 300px;
-  height: 25px;
-  text-indent: 50px;
-}
-.login-window:last-of-type {
-  margin-top: 20px;
-}
-.btn-row {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  margin: auto;
-}
-.btn-row > div {
-  margin-top: 25px;
-}
-.btn {
-  width: 180px;
-  color: white;
-  background: linear-gradient(90deg, rgb(0, 68, 255) 0%, rgb(0, 162, 255) 100%);
-  padding: 15px 45px;
-  font-size: 75%;
-  font-weight: 900;
-  cursor: pointer;
-  transition-duration: 0.5s;
-  border-radius: 10px;
-}
-.btn:hover {
-  color: rgb(0, 255, 255);
-  transform: scaleX(0.9) scaleY(0.9);
-}
-.hidden {
+#create-btn {
   display: none;
+  width: 280px;
+  margin-left: 1%;
+}
+#h1-sign-up {
+  display: none;
+}
+#log-in {
+  display: block;
+}
+#log-out {
+  display: none;
+}
+#error-msg-create {
+  width: 300px;
 }

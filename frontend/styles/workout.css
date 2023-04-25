@@ -80,7 +80,7 @@
 @media screen and (min-width: 1280px) {
   .holder {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 1000px;
     margin: auto;
     margin-top: 50px;
@@ -91,6 +91,7 @@
     background: var(--light-color);
     height: fit-content;
     width: 750px;
+    margin-bottom: 80px;
   }
   .head,
   .content {
