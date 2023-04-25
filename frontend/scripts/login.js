@@ -1,4 +1,5 @@
-/* // can´t get it to work this way
+/*
+// can´t get it to work this way
 const loginForm = () => {
   app.nav.insertAdjacentHTML(
     "afterend",
@@ -38,10 +39,11 @@ const loginForm = () => {
             <div>
               <input type="button" value="Back" id="back-btn" class="btn" />
             </div>
-          </div>
-        </form>`
+            </div>
+            </form>`
   );
-};*/
+};
+*/
 
 const app = {
   loginForm: document.getElementById("login-form"),
@@ -56,7 +58,7 @@ const app = {
   backBtn: document.getElementById("back-btn"),
   errorMsgUser: document.getElementById("error-msg-login"),
   errorMsgCreate: document.getElementById("error-msg-create"),
-  userLogged: localStorage.getItem("userLogged"),
+  //userLogged: localStorage.getItem("userLogged"), to keep user logged in
   savedUsername: [],
   savedPassword: [],
 };
@@ -145,8 +147,8 @@ app.createBtn.addEventListener("click", (e) => {
 
 /* save locally instead
   
- localStorage.setItem('username'); //save in array 
- localStorage.setItem('password'); //save in array 
+localStorage.setItem('username'); //save in array 
+localStorage.setItem('password'); //save in array 
 let saveduser =  localStorage.setItem('username');
 let savedpass =  localStorage.setItem('password');
 localStorage.removeItem('password');
@@ -159,7 +161,7 @@ localStorage.clear;
   let username = app.loginForm.user.value;
   let password = app.loginForm.pass.value;
 
-  if (username == "Sara" && password == "qwe123") {
+  if (username == "Sara" && password == "qwe123") { // <= dont
     localStorage.setItem("userLogged", "true");
     removeLoginMenu();
   } else {
