@@ -54,6 +54,18 @@ const listWorkouts = async () => {
       );
     });
 
+    // Funkar inte fullt ut
+    if (window.innerWidth < 950) {
+      const buttons = document.querySelector(".container");
+      buttons.insertAdjacentHTML(
+        "beforebegin",
+        ` <div class="buttons">
+          <button>Add exercise</button>
+          <button>Logs</button>
+        </div>`
+      );
+    }
+  } else {
     const buttons = document.querySelector(".container");
     buttons.insertAdjacentHTML(
       "afterend",

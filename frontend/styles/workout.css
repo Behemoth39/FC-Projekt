@@ -1,18 +1,26 @@
 @media screen and (max-width: 949px) {
-  /* remove redundancies */
-  /* Is CSS grid viable */
-  .table-holder {
+  .holder {
     width: 100%;
     margin-top: 1rem;
   }
-  .table-container {
+  .container {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    background: var(--light-color);
     width: 95%;
     zoom: 85%;
+    margin-bottom: 3rem;
+  }
+  .head,
+  .content {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+  }
+  .head {
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
   }
   .edit {
     color: var(--edit-color);
@@ -38,21 +46,27 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
-  .table-holder {
+  .holder {
     width: 90%;
     margin-top: 3rem;
   }
-  .table-container {
+  .container {
     display: flex;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-  table {
+    flex-direction: column;
     margin: auto;
-    min-width: 700px;
-    height: fit-content;
-    background-color: var(--light-color);
-    border-collapse: collapse;
+    background: var(--light-color);
+    width: 95%;
+    margin-bottom: 3rem;
+  }
+  .head,
+  .content {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+  }
+  .head {
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
   }
   .edit {
     color: var(--edit-color);
