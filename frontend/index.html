@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/color.css" />
+    <link rel="stylesheet" href="./styles/loginform.css" />
     <script src="https://kit.fontawesome.com/1e64290bfc.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -40,10 +41,28 @@
             <li><a href="./pages/food.html">Food</a></li>
             <li><a href="./pages/workout.html">Workout</a></li>
             <li><a href="">About</a></li>
-            <li><a href="">Login | Signup</a></li>
+            <li id="log-in"><a href="">Login | Signup</a></li>
+            <li class="hidden" id="log-out"><a href="">Logout</a></li>
           </ul>
         </div>
       </nav>
+      <div class="loginContainer hidden" id="login-menu">
+        <div id="closebtn">X</div>
+        <form class="login-windows" id="login-form">
+          <p id="error-msg-login" class="hidden">Felaktigt användarnamn/lösenord!</p>
+          <h2 id="log-h2">LOGIN</h2>
+          <input id="user" class="login-window" placeholder="namn" type="text" />
+          <input id="pass" class="login-window" placeholder="lösenord" type="password" />
+          <div class="btn-row">
+            <div>
+              <input type="button" value="LOGGA IN" id="login-btn" class="btn" />
+            </div>
+            <div>
+              <input type="button" value="FÖRSÖK IGEN" id="again-btn" class="btn hidden" />
+            </div>
+          </div>
+        </form>
+      </div>
     </header>
     <main>
       <article class="home-banner">
@@ -116,5 +135,6 @@
       </article>
     </main>
     <footer><p>Fitness Companion</p></footer>
+    <script src="./scripts/login.js"></script>
   </body>
 </html>

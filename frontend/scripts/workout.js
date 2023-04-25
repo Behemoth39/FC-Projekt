@@ -10,19 +10,19 @@ const listWorkouts = async () => {
     console.log(data);
 
     // skapa DOM element
-    let div1 = document.createElement("div");
-    let div2 = document.createElement("div");
-    let div3 = document.createElement("div");
+    const div1 = document.createElement("div");
+    const div2 = document.createElement("div");
+    const div3 = document.createElement("div");
 
     // Jag har ingen aning om vad jag gör här
-    const listExercises = async () => {
+    const listExercises = async () => /*var ska await vara?*/ {
       data.forEach((exercises) => {
         const exercise = document.querySelector("#exercise");
-        exercise.append(div1);
+        exercise.appendChild(div1);
+        exercise.appendChild(div2);
+        exercise.appendChild(div3);
         div1.insertAdjacentHTML("beforeend", `<p>${exercises.sets}</p>`);
-        exercise.append(div2);
         div2.insertAdjacentHTML("beforeend", `<p>${exercises.reps}</p>`);
-        exercise.append(div3);
         div3.insertAdjacentHTML("beforeend", `<p>${exercises.weight}</p>`);
       });
     };
