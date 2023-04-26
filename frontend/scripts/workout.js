@@ -10,14 +10,14 @@ const listWorkouts = async () => {
     console.log(data);
 
     /**********************************************************/
-    // Får ej detta att funka
+    // can´t get it to work this way
 
-    // skapa DOM element
+    // Create DOM elements
     /*const div1 = document.createElement("div");
     const div2 = document.createElement("div");
     const div3 = document.createElement("div");*/
 
-    // Jag har ingen aning om vad jag gör här
+    // No clue of how to get this to work
     /*const listExercises = async () => //var ska await vara?
     {
       data.forEach((exercises) => {
@@ -30,11 +30,11 @@ const listWorkouts = async () => {
         div3.insertAdjacentHTML("beforeend", `<p>${exercises.weight}</p>`);
       });
     };*/
-    /* ${listExercises()} // lägg i loopen nedan
-    // Borde jag loopa igenom hela innan alla element är på rätt plats?
+    /* ${listExercises()} // put in the loop below
+    // Should I loop through the whole thing before all the elements are in their right places?
     /**************************************************************/
 
-    // Nuvarande utseende är bara placeholder tills jag listat ut hur jag får koden ovan att funka
+    // Current layout is just a placeholder until I figure out how to get the code above to work
     data.forEach((exercises) => {
       workout.insertAdjacentHTML(
         "beforeend",
@@ -54,7 +54,7 @@ const listWorkouts = async () => {
       );
     });
 
-    // Funkar inte fullt ut
+    // Does not work fully yet
     if (window.innerWidth < 950) {
       const buttons = document.querySelector(".container");
       buttons.insertAdjacentHTML(

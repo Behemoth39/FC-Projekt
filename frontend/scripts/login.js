@@ -46,8 +46,8 @@ const loginForm = () => {
 };
 */
 
-// Återanvänd och omskriven kod som är skirven i början av utbildningen
-// Fungerar inte som tänkt än
+// Reused/Rewritten code that i wrote in the first course
+// Does not work fully yet
 const app = {
   loginForm: document.querySelector("#login-form"),
   loginMenu: document.querySelector("#login-menu"),
@@ -82,7 +82,7 @@ function loggedOut() {
   app.logout.classList.add("hidden");
 }
 
-// doesent work, why?
+// doesn't work, why?
 function errorMsg() {
   app.errorMsgUser.classList.remove("error-msg");
   setTimeout(function () {
@@ -114,7 +114,7 @@ function addSignInUP() {
 
 app.login.addEventListener("click", (e) => {
   e.preventDefault;
-  app.loginMenu.classList.remove("hidden"); // doesent work, why?
+  app.loginMenu.classList.remove("hidden"); // doesn't work, why?
 });
 
 document.getElementById("closebtn").addEventListener("click", (e) => {
@@ -171,7 +171,7 @@ if (app.userLogged) {
 app.logout.addEventListener("click", (e) => {
   e.preventDefault;
   clearForm();
-  localStorage.clear(); // clear all or only userLogged
+  localStorage.clear(); // clear all or only userLogged?
 });
 
 /* to save locally instead, use this when turning in the assignment
