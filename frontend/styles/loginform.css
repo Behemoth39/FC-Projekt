@@ -8,7 +8,7 @@
   justify-content: center;
   height: 350px;
   width: 400px;
-  display: flex; /* set to none  */
+  display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -73,22 +73,9 @@
   border-radius: 15px;
   cursor: pointer;
 }
-#create-btn {
-  /* this button gets pushed to the right, why? */
-  display: none;
-}
-#back-btn {
-  display: none;
-}
-#h1-sign-up {
-  display: none;
-}
-#log-in {
-  display: block;
-}
-#log-out {
-  display: none;
-}
 #error-msg-create {
   width: 300px;
+}
+.hidden {
+  display: none;
 }

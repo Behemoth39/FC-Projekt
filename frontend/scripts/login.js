@@ -1,5 +1,6 @@
 /*
 // can´t get it to work this way
+
 const loginForm = () => {
   app.nav.insertAdjacentHTML(
     "afterend",
@@ -45,23 +46,41 @@ const loginForm = () => {
 };
 */
 
+// Återanvänd och omskriven kod som är skirven i början av utbildningen
+// Fungerar inte som tänkt än
 const app = {
-  loginForm: document.getElementById("login-form"),
-  loginMenu: document.getElementById("login-menu"),
-  login: document.getElementById("log-in"),
-  logout: document.getElementById("log-out"),
-  signIn: document.getElementById("login-btn-in"),
-  signUpBtn: document.getElementById("login-btn-up"),
-  h1SignIn: document.getElementById("h1-sign-in"),
-  h1SignUp: document.getElementById("h1-sign-up"),
-  createBtn: document.getElementById("create-btn"),
-  backBtn: document.getElementById("back-btn"),
-  errorMsgUser: document.getElementById("error-msg-login"),
-  errorMsgCreate: document.getElementById("error-msg-create"),
-  //userLogged: localStorage.getItem("userLogged"), to keep user logged in
+  loginForm: document.querySelector("#login-form"),
+  loginMenu: document.querySelector("#login-menu"),
+  login: document.querySelector("#log-in"),
+  logout: document.querySelector("#log-out"),
+  signIn: document.querySelector("#login-btn-in"),
+  signUpBtn: document.querySelector("#login-btn-up"),
+  h1SignIn: document.querySelector("#h1-sign-in"),
+  h1SignUp: document.querySelector("#h1-sign-up"),
+  createBtn: document.querySelector("#create-btn"),
+  backBtn: document.querySelector("#back-btn"),
+  errorMsgUser: document.querySelector("#error-msg-login"),
+  errorMsgCreate: document.querySelector("#error-msg-create"),
+  userLogged: localStorage.getItem("userLogged"), //to keep user logged in
   savedUsername: [],
   savedPassword: [],
 };
+
+function clearForm() {
+  app.loginForm.user.value = null;
+  app.loginForm.pass.value = null;
+}
+
+function loggedIn() {
+  app.loginMenu.classList.add("hidden");
+  app.login.classList.add("hidden");
+  app.logout.classList.remove("hidden");
+}
+
+function loggedOut() {
+  app.login.classList.remove("hidden");
+  app.logout.classList.add("hidden");
+}
 
 // doesent work, why?
 function errorMsg() {
@@ -74,33 +93,33 @@ function errorMsg() {
 }
 
 function removeSignInUP() {
-  app.signIn.style.display = "none";
-  app.signUpBtn.style.display = "none";
-  app.h1SignIn.style.display = "none";
-  app.h1SignUp.style.display = "block";
-  app.createBtn.style.display = "inline-block";
-  app.backBtn.style.display = "inline-block";
+  app.signIn.classList.add("hidden");
+  app.signUpBtn.classList.add("hidden");
+  app.h1SignIn.classList.add("hidden");
+  app.h1SignUp.classList.remove("hidden");
+  app.createBtn.classList.remove("hidden");
+  app.backBtn.classList.remove("hidden");
   app.errorMsgUser.classList.add("error-msg");
 }
 
 function addSignInUP() {
-  app.signIn.style.display = "inline-block";
-  app.signUpBtn.style.display = "inline-block";
-  app.createBtn.style.display = "none";
-  app.backBtn.style.display = "none";
-  app.h1SignIn.style.display = "block";
-  app.h1SignUp.style.display = "none";
+  app.signIn.classList.remove("hidden");
+  app.signUpBtn.classList.remove("hidden");
+  app.createBtn.classList.add("hidden");
+  app.backBtn.classList.add("hidden");
+  app.h1SignIn.classList.remove("hidden");
+  app.h1SignUp.classList.add("hidden");
   app.errorMsgCreate.classList.add("error-msg");
 }
 
 app.login.addEventListener("click", (e) => {
   e.preventDefault;
-  app.loginMenu.style.display = "flex"; // doesent work, why?
+  app.loginMenu.classList.remove("hidden"); // doesent work, why?
 });
 
 document.getElementById("closebtn").addEventListener("click", (e) => {
   e.preventDefault;
-  app.loginMenu.style.display = "none";
+  app.loginMenu.classList.add("hidden");
 });
 
 app.signIn.addEventListener("click", (e) => {
@@ -110,9 +129,8 @@ app.signIn.addEventListener("click", (e) => {
 
   for (let i = 0; i < app.savedUsername.length; i++) {
     if (username == app.savedUsername[i] && password == app.savedPassword[i]) {
-      app.loginMenu.style.display = "none";
-      app.login.style.display = "none";
-      app.logout.style.display = "block";
+      localStorage.setItem("userLogged", "true");
+      loggedIn();
     } else {
       errorMsg();
     }
@@ -139,13 +157,24 @@ app.createBtn.addEventListener("click", (e) => {
   } else {
     app.savedUsername.push(app.loginForm.user.value);
     app.savedPassword.push(app.loginForm.pass.value);
-    app.loginForm.user.value = null;
-    app.loginForm.pass.value = null;
+    clearForm();
     addSignInUP();
   }
 });
 
-/* save locally instead
+if (app.userLogged) {
+  loggedIn();
+} else {
+  loggedOut();
+}
+
+app.logout.addEventListener("click", (e) => {
+  e.preventDefault;
+  clearForm();
+  localStorage.clear(); // clear all or only userLogged
+});
+
+/* to save locally instead, use this when turning in the assignment
   
 localStorage.setItem('username'); //save in array 
 localStorage.setItem('password'); //save in array 
@@ -153,33 +182,5 @@ let saveduser =  localStorage.setItem('username');
 let savedpass =  localStorage.setItem('password');
 localStorage.removeItem('password');
 localStorage.clear;  
-*/
-
-// My older code to use as reference for the above //
-/*document.getElementById("login-btn").addEventListener("click", (e) => {
-  e.preventDefault;
-  let username = app.loginForm.user.value;
-  let password = app.loginForm.pass.value;
-
-  if (username == "Sara" && password == "qwe123") { // <= dont
-    localStorage.setItem("userLogged", "true");
-    removeLoginMenu();
-  } else {
-    errorMsg();
-  }
-});
-
-if (app.userLogged) {
-  removeLoginMenu();
-} else {
-  addLoginMenu();
-}
-
-document.getElementById("log-out").addEventListener("click", (e) => {
-  e.preventDefault;
-  addLoginMenu();
-  clearForm();
-  localStorage.clear();
-});
 
 */
