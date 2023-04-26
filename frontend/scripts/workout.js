@@ -10,7 +10,7 @@ const listWorkouts = async () => {
     console.log(data);
 
     /**********************************************************/
-    // can´t get it to work this way
+    // I can´t get it to work this way
 
     // Create DOM elements
     /*const div1 = document.createElement("div");
@@ -54,7 +54,7 @@ const listWorkouts = async () => {
       );
     });
 
-    // Does not work fully yet
+    // Does not work fully yet, no realtime update
     if (window.innerWidth < 950) {
       const buttons = document.querySelector(".container");
       buttons.insertAdjacentHTML(
@@ -64,16 +64,16 @@ const listWorkouts = async () => {
           <button>Logs</button>
         </div>`
       );
+    } else {
+      const buttons = document.querySelector(".container");
+      buttons.insertAdjacentHTML(
+        "afterend",
+        ` <div class="buttons">
+            <button>Add exercise</button>
+            <button>Logs</button>
+          </div>`
+      );
     }
-  } else {
-    const buttons = document.querySelector(".container");
-    buttons.insertAdjacentHTML(
-      "afterend",
-      ` <div class="buttons">
-          <button>Add exercise</button>
-          <button>Logs</button>
-        </div>`
-    );
   }
 };
 

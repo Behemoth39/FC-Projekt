@@ -1,13 +1,13 @@
 /*
-// can´t get it to work this way
+// I can´t get it to work this way
 
 const loginForm = () => {
   app.nav.insertAdjacentHTML(
     "afterend",
-    `<div class="loginContainer" id="login-menu">
+    `<div class="loginContainer hidden" id="login-menu">
         <div id="closebtn">X</div>
         <h1 id="h1-sign-in">Sign In</h1>
-        <h1 id="h1-sign-up">Sign Up</h1>
+        <h1 class="hidden" id="h1-sign-up">Sign Up</h1>
         <form id="login-form" class="login-windows">
           <p id="error-msg-login" class="error-msg">Invalid Username/Password!</p>
           <p id="error-msg-create" class="error-msg">
@@ -35,13 +35,14 @@ const loginForm = () => {
               <input type="button" value="SIGN UP" id="login-btn-up" class="btn" />
             </div>
             <div>
-              <input type="button" value="Create Account" id="create-btn" class="btn" />
+              <input type="button" value="Create Account" id="create-btn" class="btn hidden" />
             </div>
             <div>
-              <input type="button" value="Back" id="back-btn" class="btn" />
+              <input type="button" value="Back" id="back-btn" class="btn hidden" />
             </div>
-            </div>
-            </form>`
+          </div>
+        </form>
+      </div>`
   );
 };
 */
@@ -61,7 +62,7 @@ const app = {
   backBtn: document.querySelector("#back-btn"),
   errorMsgUser: document.querySelector("#error-msg-login"),
   errorMsgCreate: document.querySelector("#error-msg-create"),
-  userLogged: localStorage.getItem("userLogged"), //to keep user logged in
+  userLogged: localStorage.getItem("userLogged"), // to keep user logged in, continue to use?
   savedUsername: [],
   savedPassword: [],
 };
@@ -114,7 +115,7 @@ function addSignInUP() {
 
 app.login.addEventListener("click", (e) => {
   e.preventDefault;
-  app.loginMenu.classList.remove("hidden"); // doesn't work, why?
+  app.loginMenu.classList.toggle("hidden");
 });
 
 document.getElementById("closebtn").addEventListener("click", (e) => {
@@ -174,7 +175,7 @@ app.logout.addEventListener("click", (e) => {
   localStorage.clear(); // clear all or only userLogged?
 });
 
-/* to save locally instead, use this when turning in the assignment
+/* to save locally instead
   
 localStorage.setItem('username'); //save in array 
 localStorage.setItem('password'); //save in array 
