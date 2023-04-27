@@ -7,32 +7,53 @@ const listWorkouts = async () => {
 
   if (response.status == 200) {
     const data = await response.json();
-    console.log(data);
 
-    /**********************************************************/
+    /***********************************************************************/
     // I can´t get it to work this way
 
     // Create DOM elements
+    /*
     const div1 = document.createElement("div");
     const div2 = document.createElement("div");
     const div3 = document.createElement("div");
+    */
 
     // No clue of how to get this to work
-    const listExercises = async () =>
+    /*const listExercises = async () =>
       // await?
       {
         data.forEach((exercises) => {
+          div1.insertAdjacentHTML("beforeend", `<p>${exercises.sets}</p>`);
+          div2.insertAdjacentHTML("beforeend", `<p>${exercises.reps}</p>`);
+          div3.insertAdjacentHTML("beforeend", `<p>${exercises.weight}</p>`);
+
           const exercise = document.querySelector("#exercise");
           exercise.appendChild(div1);
           exercise.appendChild(div2);
           exercise.appendChild(div3);
-          div1.insertAdjacentHTML("beforeend", `<p>${exercises.sets}</p>`);
-          div2.insertAdjacentHTML("beforeend", `<p>${exercises.reps}</p>`);
-          div3.insertAdjacentHTML("beforeend", `<p>${exercises.weight}</p>`);
         });
-      };
+      };*/
+
     // Should I loop through the whole thing before all the elements are in their right places?
-    /**************************************************************/
+
+    /* data.forEach((exercises) => {
+      workout.insertAdjacentHTML(
+        "beforeend",
+        ` <div class="container">
+          <div class="head">
+            <h3>${exercises.exercise}</h3>
+            <p class="edit">E</p>
+          </div>
+          <div class="content" id="exercise"> 
+            ${listExercises()}
+            <p class="edit">E</p>
+          </div>
+          <div class="add-set">Add set</div>
+        </div>`
+      );
+    });*/
+
+    /*************************************************************************/
 
     // Current layout is just a placeholder until I figure out how to get the code above to work
     data.forEach((exercises) => {
@@ -44,7 +65,9 @@ const listWorkouts = async () => {
             <p class="edit">E</p>
           </div>
           <div class="content" id="exercise"> 
-            ${listExercises()}
+            <p>${exercises.sets}</p>
+            <p>${exercises.reps}</p>
+            <p>${exercises.weight}</p>
             <p class="edit">E</p>
           </div>
           <div class="add-set">Add set</div>
@@ -76,22 +99,3 @@ const listWorkouts = async () => {
 };
 
 listWorkouts();
-
-/*data.forEach((exercises) => {
-      workout.insertAdjacentHTML(
-        "beforeend",
-        ` <div class="container">
-          <div class="head">
-            <h3>${exercises.exercise}</h3>
-            <p class="edit">E</p>
-          </div>
-          <div class="content" id="exercise"> 
-            <p>${exercises.sets}</p>
-            <p>${exercises.reps}</p>
-            <p>${exercises.weight}</p>
-            <p class="edit">E</p>
-          </div>
-          <div class="add-set">Add set</div>
-        </div>`
-      );
-    });*/

@@ -1,0 +1,49 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Chili Con Carne",
+      "amount": 200,
+      "calories": 206,
+      "protein": 15,
+      "carbs": 7.8,
+      "fats": 22.4
+    },
+    {
+      "id": 2,
+      "name": "Carbonara",
+      "amount": 300,
+      "calories": 573,
+      "protein": 24.15,
+      "carbs": 77.16,
+      "fats": 15.93
+    },
+    {
+      "id": 3,
+      "name": "Greek Yoghurt",
+      "amount": 250,
+      "calories": 300,
+      "protein": 10.5,
+      "carbs": 9,
+      "fats": 25
+    },
+    {
+      "id": 4,
+      "name": "Hamstring curl",
+      "amount": 3,
+      "calories": 8,
+      "protein": 5,
+      "carbs": 7.8,
+      "fats": 22.4
+    },
+    {
+      "id": 5,
+      "name": "Hammer curl",
+      "amount": 4,
+      "calories": 8,
+      "protein": 5,
+      "carbs": 7.8,
+      "fats": 22.4
+    }
+  ]
+}
