@@ -1,5 +1,6 @@
 @media screen and (max-width: 949px) {
   /* remove redundancies */
+  /* put overflow on table */
   .table-holder {
     width: 100%;
     margin: auto;

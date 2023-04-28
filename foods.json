@@ -29,21 +29,30 @@
     },
     {
       "id": 4,
-      "name": "Hamstring curl",
-      "amount": 3,
-      "calories": 8,
-      "protein": 5,
-      "carbs": 7.8,
-      "fats": 22.4
+      "name": "Toast",
+      "amount": 120,
+      "calories": 312,
+      "protein": 10.2,
+      "carbs": 56.4,
+      "fats": 4.2
     },
     {
       "id": 5,
-      "name": "Hammer curl",
-      "amount": 4,
-      "calories": 8,
-      "protein": 5,
-      "carbs": 7.8,
-      "fats": 22.4
+      "name": "Skagenröra",
+      "amount": 50,
+      "calories": 210,
+      "protein": 2.3,
+      "carbs": 1.6,
+      "fats": 21.5
+    },
+    {
+      "id": 6,
+      "name": "Whey shake",
+      "amount": 64,
+      "calories": 230,
+      "protein": 48,
+      "carbs": 5,
+      "fats": 1.74
     }
   ]
 }

@@ -1,9 +1,9 @@
-/*
-// I can´t get it to work this way
+// This isnt a working way, rework when there is time
 
+/*const begin = document.querySelector("header");
 const loginForm = () => {
-  app.nav.insertAdjacentHTML(
-    "afterend",
+  begin.insertAdjacentHTML(
+    "beforeend",
     `<div class="loginContainer hidden" id="login-menu">
         <div id="closebtn">X</div>
         <h1 id="h1-sign-in">Sign In</h1>
@@ -45,7 +45,10 @@ const loginForm = () => {
       </div>`
   );
 };
-*/
+
+loginForm();*/
+
+/***************************************************************************************************/
 
 // Reused/Rewritten code that i wrote in the first course
 // Does not work fully yet

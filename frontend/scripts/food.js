@@ -64,10 +64,10 @@ const listFoods = async () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>206</td>
-                  <td>15</td>
-                  <td>22,4</td>
-                  <td>7,8</td>
+                  <td>1831</td>
+                  <td>110,15</td>
+                  <td>156,96</td>
+                  <td>90,77</td>
                 </tr>
               </tbody>
             </table>
@@ -76,6 +76,8 @@ const listFoods = async () => {
         </div>
       </section>`
     );
+
+    // <table class="sub-table"> should also have its own function to sum daily totals
 
     const food = document.querySelector("#foods");
     data.forEach((foods) => {
